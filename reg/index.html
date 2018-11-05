@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <title>百飞科海外仓 - 注册</title>
+    <link rel="icon" href="../icon/favicon_64x64.ico" type="image/x-icon">
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <!--theme-style-->
+    <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/style.css">
+    <!--//theme-style-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script type="application/x-javascript">
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!--fonts-->
+    <link href='../css/googlefont.css' rel='stylesheet' type='text/css'>
+    <!--//fonts-->
+</head>
+
+<body>
+    <!--header-->
+    <div class="header">
+        <div class="header-top">
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="logo">
+                    <a href="http://www.bestfik.com/"><img src="../images/logo_font.png" width="200" height="50" alt=" " /></a>
+                </div>
+                <div class="top-nav">
+                    <span class="menu"> </span>
+                    <ul>
+                        <li><a href="../" class="scroll">首页</a></li>
+                        <li><a href="#" class="scroll">海外仓</a></li>
+                        <li><a href="#" class="scroll">全球直发</a></li>
+                        <li><a href="#" class="scroll">资讯中心</a></li>
+                        <li><a href="#" class="scroll">联系我们</a></li>
+                        <li><a href="../login" class="scroll">注册/登陆</a></li>
+                    </ul>
+                    <!--script-->
+                    <script>
+                        $("span.menu").click(function () {
+							$(".top-nav ul").slideToggle(500, function () {});
+						});
+					</script>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+            <div class="mainxx row-fluid">
+
+                    <div class="col-main span12">
+                        <div class="account-create">
+                            <div class="page-title">
+                                <h1>用户注册</h1>
+                            </div>
+
+                            <div class="fieldset">
+
+                                <h2 class="legend">个人信息</h2>
+                                <ul class="form-list">
+                                    <li>
+                                        <label for="email_address" class="required" id="Emails"><em>*</em>Email</label>
+                                        <div class="input-box">
+                                            <input type="text" id="UserName" value="" title="Email Address" class="input-text validate-email required-entry">
+                                        </div>
+                                    </li>
+                                    <li class="fields">
+
+                                        <div class="customer-name">
+                                            <div class="field name-firstname">
+                                                <label for="firstname" class="required" id="Passwords"><em>*</em>密码</label>
+                                                <div class="input-box">
+                                                    <input name="PassWord" type="password" maxlength="255" id="PassWord" title="First Name" class="input-text required-entry">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="field name-lastname">
+                                                <label for="lastname" class="required" id="RePasswords"><em>*</em>重复密码</label>
+                                                <div class="input-box">
+                                                    <input id="CPassWord" type="password" value="" title="Last Name" maxlength="255" class="input-text required-entry">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                         <li>
+                                                    <label for="firstname" class="required" id="Label2"><em>*</em>客户姓名</label>
+                                                    <div class="input-box">
+
+                                                        <input type="text" name="email" id="TxtName" value="" title="Name" class="input-text validate-email required-entry">
+                                                        
+                                                    </div>
+                                                </li>
+                                    <li class="fields">
+                                        <div>
+                                            <input type="hidden" name="success_url" value="">
+                                            <input type="hidden" name="error_url" value="">
+                                            <h2 class="legend"></h2>
+                                            <ul class="form-list">
+                                                <li>
+                                                    <label for="email_address" class="required" id="Tels"><em>*</em>电话</label>
+                                                    <div class="input-box">
+
+                                                        <input type="text" name="email" id="tel" value="" title="Email Address" class="input-text validate-email required-entry">
+                                                        
+                                                    </div>
+                                                </li>
+                                            
+                                                <li>
+                                                    <label for="firstname" class="required" id="Phones"><em>*</em>手机</label>
+                                                    <div class="input-box">
+
+                                                        <input type="text" name="email" id="PhoneNO" value="" title="Email Address" class="input-text validate-email required-entry">
+                                                        
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <label for="firstname" class="required" id="Qsms"><em>*</em>QQ/Skype/微信</label>
+                                                    <div class="input-box">
+                                                        <input type="text" name="email" id="Qsm" value="" title="Email Address" class="input-text validate-email required-entry">
+
+                                                    </div>
+                                                </li>
+                                                <div id="UpdatePanel1">
+	
+                                                        <li>
+
+                                                            <label for="firstname" class="required" id="Countrys"><em>*</em>国　家</label>
+                                                            <div class="input-box">
+                                                                <select name="DrCountry" onchange="javascript:setTimeout('__doPostBack(\'DrCountry\',\'\')', 0)" id="DrCountry" class="input-text validate-email required-entry" style="height:30px;width:254px;">
+		<option selected="selected" value="0"></option>
+		<option value="20">Afghanistan-阿富汗</option>
+		<option value="21">Albania-阿尔巴尼亚</option>
+		<option value="22">Algeria-阿尔及利亚</option>
+		<option value="182">American Samoa-萨摩亚群岛</option>
+		<option value="23">Andorra-安道尔</option>
+		<option value="24">Angola-安哥拉</option>
+		<option value="25">Anguilla-安圭拉</option>
+		<option value="26">Antigua And Barbuda-安提瓜和巴布达</option>
+		<option value="27">Argentina-阿根廷</option>
+		<option value="28">Armenia-亚美尼亚</option>
+		<option value="29">Aruba-阿鲁巴</option>
+		<option value="30">Australia-澳大利亚</option>
+		<option value="31">Austria-奥地利</option>
+		<option value="32">Azerbaijan-阿塞拜疆</option>
+		<option value="313">Azores-亚速尔</option>
+		<option value="33">Bahamas-巴哈马</option>
+		<option value="34">Bahrain-巴林</option>
+		<option value="35">Bangladesh-孟加拉</option>
+		<option value="36">Barbados-巴巴多斯</option>
+		<option value="37">Belarus-白俄罗斯</option>
+		<option value="38">Belgium-比利时</option>
+		<option value="39">Belize-伯利兹城</option>
+		<option value="40">Benin-贝宁</option>
+		<option value="41">Bermuda-百慕大</option>
+		<option value="42">Bhutan-不丹</option>
+		<option value="43">Bolivia-玻利维亚</option>
+		<option value="317">Bonaire-伯奈尔</option>
+		<option value="44">Bosnia And Herzegovina-波黑</option>
+		<option value="45">Botswana-博茨瓦纳</option>
+		<option value="248">Bouvet Island-布维岛</option>
+		<option value="46">Brazil-巴西</option>
+		<option value="47">Brunei-文莱</option>
+		<option value="48">Bulgaria-保加利亚</option>
+		<option value="49">Burkina Faso-布基纳法索</option>
+		<option value="50">Burundi-布隆迪</option>
+		<option value="51">Cambodia-柬埔寨</option>
+		<option value="52">Cameroon-喀麦隆</option>
+		<option value="53">Canada-加拿大</option>
+		<option value="308">Canary Islands-加那利群岛</option>
+		<option value="54">Cape Verde-佛得角</option>
+		<option value="57">Cayman African Republic-开曼群岛</option>
+		<option value="58">Central African Republic-中非共和国</option>
+		<option value="59">Chad-乍得</option>
+		<option value="60">Chile-智利</option>
+		<option value="340">China-中国</option>
+		<option value="234">Christmas Island-圣诞岛</option>
+		<option value="196">Christopher and Nevis-圣克里斯托弗和尼维斯</option>
+		<option value="235">Cocos Islands-可可斯群岛</option>
+		<option value="61">Colombia-哥伦比亚</option>
+		<option value="236">Comoros-科摩罗</option>
+		<option value="63">Congo-刚果</option>
+		<option value="62">Congo Democratic-刚果民主共和国</option>
+		<option value="162">Cook Islands-库克群岛</option>
+		<option value="64">Costa Rica-哥斯达黎加</option>
+		<option value="65">Croatia-克罗地亚</option>
+		<option value="66">Cuba-古巴</option>
+		<option value="67">Cyprus-塞浦路斯</option>
+		<option value="68">Czech Republic-捷克</option>
+		<option value="69">Denmark-丹麦</option>
+		<option value="70">Djibouti-吉布提</option>
+		<option value="71">Dominica-多米尼加</option>
+		<option value="72">Dominican Republic-多米尼加共和国</option>
+		<option value="73">East Timor-东帝汶</option>
+		<option value="74">Ecuador-厄瓜多尔</option>
+		<option value="75">Egypt-埃及</option>
+		<option value="76">El Salvador-萨尔瓦多</option>
+		<option value="77">Equatorial Guinea-赤道几内亚</option>
+		<option value="78">Eritrea-厄立特里亚</option>
+		<option value="79">Estonia-爱沙尼亚</option>
+		<option value="80">Ethiopia-埃塞俄比亚</option>
+		<option value="237">Falkland Islands-福克兰群岛</option>
+		<option value="81">Faroe Islands-法罗群岛</option>
+		<option value="82">Fiji-斐济</option>
+		<option value="83">Finland-芬兰</option>
+		<option value="84">France-法国</option>
+		<option value="85">French Guiana-法属圭亚那</option>
+		<option value="86">French Polynesia-法属波利尼西亚</option>
+		<option value="87">Gabon-加蓬</option>
+		<option value="88">Gambia-冈比亚</option>
+		<option value="89">Gaza and Khan Yunis-加沙及汗尤尼斯</option>
+		<option value="342">GD-广东</option>
+		<option value="90">Georgia-格鲁吉亚</option>
+		<option value="91">Germany-德国</option>
+		<option value="92">Ghana-加纳</option>
+		<option value="93">Gibraltar-直布罗陀</option>
+		<option value="94">Greece-希腊</option>
+		<option value="95">Greenland-格陵兰岛</option>
+		<option value="96">Grenada-格林纳达</option>
+		<option value="97">Guadeloupe-法属瓜德罗普岛</option>
+		<option value="98">Guam-关岛</option>
+		<option value="99">Guatemala-危地马拉</option>
+		<option value="346">Guernesey-格恩西岛</option>
+		<option value="315">GUERNSEY-根西岛</option>
+		<option value="249">Guernsey-海峡群岛</option>
+		<option value="100">Guinea-几内亚</option>
+		<option value="101">Guinea-bissau-几内亚比绍共和国</option>
+		<option value="102">Guyana-圭亚那</option>
+		<option value="103">Haiti-海地</option>
+		<option value="238">Hawaiian Islands-夏威夷群岛</option>
+		<option value="239">Heard And Mcdonald Islands-赫德和麦克唐纳群岛</option>
+		<option value="104">Honduras-洪都拉斯</option>
+		<option value="105">Hungary-匈牙利</option>
+		<option value="106">Iceland-冰岛</option>
+		<option value="107">India-印度联邦</option>
+		<option value="108">Indonesia-印度尼西亚</option>
+		<option value="109">Iran-伊朗</option>
+		<option value="110">Iraq-伊拉克</option>
+		<option value="111">Ireland-爱尔兰</option>
+		<option value="112">Israel-以色列</option>
+		<option value="113">Italy-意大利</option>
+		<option value="240">Ivory Coast-象牙海岸</option>
+		<option value="306">Ivory Coast-科特迪瓦</option>
+		<option value="114">Jamaica-牙买加</option>
+		<option value="115">Japan-日本</option>
+		<option value="241">Jersey-泽西岛</option>
+		<option value="377">JODB-日本大阪</option>
+		<option value="380">JOHGS-日本和歌山</option>
+		<option value="116">Jordan-约旦</option>
+		<option value="389">JPAY-日本愛媛</option>
+		<option value="357">JPAZ-日本愛知</option>
+		<option value="397">JPBHD-日本北海道</option>
+		<option value="378">JPBK-日本兵庫</option>
+		<option value="361">JPCC-日本茨城</option>
+		<option value="392">JPCQ-日本長崎</option>
+		<option value="398">JPCS-日本沖縄</option>
+		<option value="360">JPCY-日本長野</option>
+		<option value="387">JPDD-日本徳島</option>
+		<option value="394">JPDF-日本大分</option>
+		<option value="383">JPDG-日本島根</option>
+		<option value="366">JPDJ-日本東京</option>
+		<option value="371">JPFD-日本福島</option>
+		<option value="390">JPFG-日本福岡</option>
+		<option value="354">JPFJ-日本福井</option>
+		<option value="352">JPFS-日本富山</option>
+		<option value="369">JPGC-日本宮城</option>
+		<option value="382">JPGD-日本広島</option>
+		<option value="395">JPGQ-日本宮崎</option>
+		<option value="381">JPGS-日本岡山</option>
+		<option value="388">JPGZ-日本高知</option>
+		<option value="376">JPJD-日本京都</option>
+		<option value="356">JPJG-日本静岡</option>
+		<option value="396">JPLED-日本鹿児島</option>
+		<option value="362">JPLM-日本栃木</option>
+		<option value="379">JPNL-日本奈良</option>
+		<option value="365">JPQ Y-日本千葉</option>
+		<option value="355">JPQF-日本岐阜</option>
+		<option value="363">JPQM-日本群馬</option>
+		<option value="372">JPQS-日本青森</option>
+		<option value="374">JPQT-日本秋田</option>
+		<option value="384">JPQU-日本鳥取</option>
+		<option value="364">JPQY-日本埼玉</option>
+		<option value="370">JPS X-日本山形</option>
+		<option value="353">JPSC-日本石川</option>
+		<option value="385">JPSK-日本山口</option>
+		<option value="368">JPSL-日本山梨</option>
+		<option value="367">JPSNC-日本神奈川</option>
+		<option value="359">JPSX-日本深潟</option>
+		<option value="358">JPSZ-日本三重</option>
+		<option value="393">JPXB-日本熊本</option>
+		<option value="386">JPXC-日本香川</option>
+		<option value="373">JPYS-日本岩手</option>
+		<option value="391">JPZ H-日本佐賀</option>
+		<option value="375">JPZH-日本滋賀</option>
+		<option value="117">Kazakhstan-哈萨克斯坦</option>
+		<option value="118">Kenya-肯尼亚</option>
+		<option value="119">Kiribati-基里巴斯</option>
+		<option value="122">Kuwait-科威特</option>
+		<option value="123">Kyrgyzstan-吉尔吉斯斯坦</option>
+		<option value="124">Laos-老挝</option>
+		<option value="125">Latvia-拉脱维亚</option>
+		<option value="126">Lebanon-黎巴嫩</option>
+		<option value="127">Lesotho-莱索托</option>
+		<option value="128">Liberia-利比里亚</option>
+		<option value="129">Libya-利比亚</option>
+		<option value="130">Liechtenstein-列支敦士登</option>
+		<option value="131">Lithuania-立陶宛</option>
+		<option value="132">Luxembourg-卢森堡</option>
+		<option value="134">Macedonia-马其顿</option>
+		<option value="135">Madagascar-马达加斯加</option>
+		<option value="136">Malawi-马拉维</option>
+		<option value="137">Malaysia-马来西亚</option>
+		<option value="138">Maldives-马尔代夫</option>
+		<option value="139">Mali-马里</option>
+		<option value="140">Malta-马耳他</option>
+		<option value="142">Marshall Islands-马绍尔群岛</option>
+		<option value="143">Martinique-马提尼克</option>
+		<option value="144">Mauritania-毛利塔尼亚</option>
+		<option value="145">Mauritius-毛里求斯</option>
+		<option value="319">Mayotte-马约特</option>
+		<option value="146">Mexico-墨西哥</option>
+		<option value="55">Micronesia-密克罗尼西亚</option>
+		<option value="147">Moldova-摩尔多瓦</option>
+		<option value="148">Monaco-摩纳哥</option>
+		<option value="149">Mongolia-蒙古</option>
+		<option value="150">Montenegro-黑山共和国</option>
+		<option value="151">Montserrat-蒙特塞拉特岛</option>
+		<option value="152">Morocco-摩洛哥</option>
+		<option value="153">Mozambique-莫桑比克</option>
+		<option value="154">Myanmar-缅甸</option>
+		<option value="155">Namibia-纳米比亚</option>
+		<option value="156">Nauru-瑙鲁</option>
+		<option value="157">Nepal-尼泊尔</option>
+		<option value="158">Netherlands-荷兰</option>
+		<option value="159">Netherlands Antilles-荷属安的列斯群岛</option>
+		<option value="160">New Caledonia-新喀里多尼亚</option>
+		<option value="161">New Zealand-新西兰</option>
+		<option value="242">New Zealand Islands Territories-新西兰属土岛屿</option>
+		<option value="163">Nicaragua-尼加拉瓜</option>
+		<option value="164">Niger-尼日尔</option>
+		<option value="165">Nigeria-尼日利亚</option>
+		<option value="243">Niue-纽埃岛</option>
+		<option value="166">Norfolk Island-诺福克岛</option>
+		<option value="120">North Korea-朝鲜</option>
+		<option value="303">north korea-韩鲜</option>
+		<option value="141">Northern Mariana Islands-北马里亚纳群岛</option>
+		<option value="167">Norway-挪威</option>
+		<option value="168">Oman-阿曼</option>
+		<option value="169">Pakistan-巴基斯坦</option>
+		<option value="56">Palau-帛琉群岛</option>
+		<option value="250">Palestine-巴勒斯坦</option>
+		<option value="170">Panama-巴拿马</option>
+		<option value="171">Papua New Guinea-巴布亚新几内亚</option>
+		<option value="172">Paraguay-巴拉圭</option>
+		<option value="173">Peru-秘鲁</option>
+		<option value="174">Philippines-菲律宾</option>
+		<option value="311">Pitcairn Island-皮特凯恩岛</option>
+		<option value="175">Poland-波兰</option>
+		<option value="251">Polynesia-玻利尼西亚</option>
+		<option value="176">Portugal-葡萄牙</option>
+		<option value="177">Puerto Rico-波多黎各</option>
+		<option value="178">Qatar-卡塔尔</option>
+		<option value="310">Reunion-留尼旺岛</option>
+		<option value="179">Romania-罗马尼亚</option>
+		<option value="180">Russia-俄罗斯联邦</option>
+		<option value="181">Rwanda-卢旺达</option>
+		<option value="231">Saint Vincent and the Grenadines-圣文森特和格林纳丁斯</option>
+		<option value="318">Saipan-塞班岛</option>
+		<option value="244">San Marino-圣马力诺</option>
+		<option value="183">Sao Tome And Principe-圣多美和普林西比</option>
+		<option value="184">Saudi Arabia-沙特阿拉伯</option>
+		<option value="185">Senegal-塞内加尔</option>
+		<option value="186">Serbia-塞尔维亚</option>
+		<option value="187">Seychelles-塞舌尔</option>
+		<option value="188">Sierra Leone-塞拉利昂</option>
+		<option value="189">Singapore-新加坡</option>
+		<option value="190">Slovakia-斯洛伐克</option>
+		<option value="191">Slovenia-斯洛文尼亚</option>
+		<option value="192">Solomon Islands-所罗门群岛</option>
+		<option value="245">Somalia-索马里</option>
+		<option value="193">South Africa-南非</option>
+		<option value="121">South Korea-韩国</option>
+		<option value="194">Spain-西班牙</option>
+		<option value="195">Sri Lanka-斯里兰卡</option>
+		<option value="198">St. Vincent-圣文森特岛</option>
+		<option value="197">ST.LUCIA-圣卢西亚</option>
+		<option value="199">Sudan-苏丹</option>
+		<option value="200">Suriname-苏里南</option>
+		<option value="201">Swaziland-斯威士兰</option>
+		<option value="202">Sweden-瑞典</option>
+		<option value="203">Switzerland-瑞士</option>
+		<option value="204">Syria-叙利亚</option>
+		<option value="316">Tahiti-塔希提岛</option>
+		<option value="206">Tajikistan-塔吉克斯坦</option>
+		<option value="207">Tanzania-坦桑尼亚</option>
+		<option value="208">Thailand-泰国</option>
+		<option value="232">The British Virgin Islands-英属维尔京群岛</option>
+		<option value="209">Togo-多哥</option>
+		<option value="401">Tokyo-to-日本东京都</option>
+		<option value="210">Tonga-汤加</option>
+		<option value="211">Trinidad And Tobago-特立尼达和多巴哥</option>
+		<option value="212">Tunisia-突尼斯</option>
+		<option value="213">Turkey-土耳其</option>
+		<option value="214">Turkmenistan-土库曼斯坦</option>
+		<option value="215">Turks And Caicos Islands-特克斯和凯科斯群岛</option>
+		<option value="216">Tuvalu-图瓦卢</option>
+		<option value="217">Uganda-乌干达</option>
+		<option value="218">Ukraine-乌克兰</option>
+		<option value="219">United Arab Emirates-阿拉伯联合酋长国</option>
+		<option value="220">United Kingdom-英国</option>
+		<option value="221">United States-美国</option>
+		<option value="222">Uruguay-乌拉圭</option>
+		<option value="305">Uzbekistan-乌兹别克斯坦</option>
+		<option value="223">Vanuatu-瓦努阿图</option>
+		<option value="224">Venezuela-委内瑞拉</option>
+		<option value="225">Vietnam-越南</option>
+		<option value="246">Virgin Gorda-维尔京戈达岛</option>
+		<option value="247">Wales-威尔士</option>
+		<option value="226">Western Samoa-西萨摩亚</option>
+		<option value="227">Yemen-也门</option>
+		<option value="228">Zambia-赞比亚</option>
+		<option value="229">Zimbabwe-津巴布韦</option>
+
+	</select>
+
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <label for="firstname" class="required" id="Provinces"><em>*</em>省</label>
+                                                            <div class="input-box">
+                                                                
+                                                                <input name="TxtProvince" type="text" id="TxtProvince" class="input-text validate-email required-entry" onfocus="if(this.value == this.defaultValue) this.value = '';" onblur="if(this.value == '') this.value = this.defaultValue;" style="width:254px;">
+
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+                                                            <label for="firstname" class="required" id="Citys"><em>*</em>城　市</label>
+                                                            <div class="input-box">
+                                                                
+                                                                <input name="TxtCity" type="text" id="TxtCity" class="input-text validate-email required-entry" onfocus="if(this.value == this.defaultValue) this.value = '';" onblur="if(this.value == '') this.value = this.defaultValue;" style="width:254px;">
+
+                                                            </div>
+                                                        </li>
+                                                    
+</div>
+                                                <li>
+                                                    <label for="firstname" class="required" id="Address1"><em>*</em>地　址</label>
+                                                    <div class="input-box">
+
+                                                        <input type="text" name="email" id="Address" value="" title="Email Address" class="input-text validate-email required-entry">
+                                                    </div>
+                                                </li>
+
+                                                <li>
+
+                                                    <label for="firstname" class="required" id="Label5"><em>*</em>企业性质</label>
+                                                    <div class="input-box">
+                                                        <select name="DrConNature" onchange="javascript:setTimeout('__doPostBack(\'DrConNature\',\'\')', 0)" id="DrConNature" class="input-text validate-email required-entry" style="height:30px;width:254px;">
+	<option value="1">个人</option>
+	<option value="2">公司</option>
+
+</select>
+
+                                                    </div>
+                                                </li>
+
+                                                <li>
+
+                                                    <label for="firstname" class="required" id="Label4"><em>*</em>需要服务</label>
+                                                    <div class="input-box">
+                                                        <select name="Drservice" onchange="javascript:setTimeout('__doPostBack(\'Drservice\',\'\')', 0)" id="Drservice" class="input-text validate-email required-entry" style="height:30px;width:254px;">
+	<option value="0">物流</option>
+	<option value="1">仓储</option>
+	<option value="2">小包</option>
+	<option value="3">其他</option>
+
+</select>
+
+                                                    </div>
+                                                </li>
+
+                                                <li>
+
+                                                    <label for="firstname" class="required" id="Label3"><em>*</em>客户类型</label>
+                                                    <div class="input-box">
+                                                        <select name="DrCUSLEVEL" onchange="javascript:setTimeout('__doPostBack(\'DrCUSLEVEL\',\'\')', 0)" id="DrCUSLEVEL" class="input-text validate-email required-entry" style="height:30px;width:254px;">
+	<option selected="selected" value="0"></option>
+	<option value="958">FBA补仓-美国</option>
+	<option value="968">FBA补仓-英国</option>
+	<option value="803">VE代发</option>
+	<option value="802">VE中转</option>
+	<option value="970">测试等级</option>
+	<option value="835">海外仓尾程派送</option>
+	<option value="804">混合服务</option>
+	<option value="799">精准定制（定制服务）</option>
+	<option value="930">精准定制-IV</option>
+	<option value="806">精准定制-S方案</option>
+	<option value="950">精准定制-法国</option>
+	<option value="526">精准定制-美国</option>
+	<option value="791">精准定制-美英国</option>
+	<option value="790">精准定制-英国</option>
+	<option value="800">退货转运</option>
+	<option value="975">一件代发-F价</option>
+	<option value="794">一件代发-德国</option>
+	<option value="816">一件代发定制服务1</option>
+	<option value="969">一件代发法国</option>
+	<option value="957">一件代发-加拿大</option>
+	<option value="796">一件代发-美德国</option>
+	<option value="792">一件代发-美国</option>
+	<option value="1042">一件代发美国—延</option>
+	<option value="798">一件代发-美英德国</option>
+	<option value="795">一件代发-美英国</option>
+	<option value="971">一件代发-日本</option>
+	<option value="797">一件代发-英德国</option>
+	<option value="793">一件代发-英国</option>
+	<option value="863">一件代发-英国1仓</option>
+
+</select>
+
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <label for="firstname" class="required" id="Label1"><em></em>主要销售平台（ebay、速卖通、亚马逊，敦煌网，wish等）</label>
+                                                    <div class="input-box">
+
+                                                        <input type="text" name="email" id="SalesPlatform" value="" title="Email Address" class="input-text validate-email required-entry">
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <label for="firstname" class="required" id="CustMangers"><em></em>客户经理工号</label>
+                                                    <div class="input-box">
+                                                        
+                                                        <input name="CustManger" type="text" id="CustManger" title="Email Address" class="input-text validate-email required-entry">
+                                                        
+                                                    </div>
+                                                </li>
+
+                                                <li class="control">
+                                                    <br>
+                                                    <div class="input-box">
+
+                                                        <input type="checkbox" id="CheckBox" value="">&nbsp;&nbsp;&nbsp;同意<a style="color:#4a90e2" href="OrderList.aspx-ParentID=56&amp;StyleID=63.htm" tppabs="http://go.hiyes.net/Manage/WebManage/OrderList.aspx?ParentID=56&amp;StyleID=63" target="_blank">《服务协议》</a>
+                                                    </div>
+
+                                                </li>
+     
+                                                <li class="control">
+                                                    
+                                                    
+                                                    
+                                                    <input class="submit" id="Button1" type="button" value="立即注册" onclick="return Submit()" style="text-align: center;  width: 80px; height: 30px; margin-top:20px; line-height: 21px; border-radius: 2px;">
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </li>
+
+                                    <li class="control" style="margin-top: 15px;">
+                                        
+                                        
+                                        
+                                        <input class="submit" id="submit" type="button" value="下一步" onclick="return Submit()" style="text-align: center; display:none; width: 80px; height: 30px; line-height: 21px; border-radius: 2px;">
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <!--footer-->
+	<div class="footer">
+        <div class="container">
+            <div class="footer-class">
+                <div class="class-footer">
+                    <ul>
+                        <li><a href="../" class="scroll">首页</a></li>
+                        <li><a href="#" class="scroll">海外仓</a></li>
+                        <li><a href="#" class="scroll">全球直发</a></li>
+                        <li><a href="#" class="scroll">资讯中心</a></li>
+                        <li><a href="#" class="scroll">联系我们</a></li>
+                        <li><a href="../login" class="scroll">注册/登陆</a></li>
+                    </ul>
+                    <p class="footer-grid">Copyright &copy; 2018.百飞科海外仓科技（深圳）有限公司 All rights reserved.</p>
+                    <img src="../images/ghs.png">
+                    <a class="footer-grid" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo" rel="noopener noreferrer"
+                        data-spm-anchor-id="a21bo.2017.1997523009.41">
+                        <span class="footer-grid">&nbsp;粤ICP备18130951号</span>
+                    </a>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

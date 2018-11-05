@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <title>百飞科海外仓 - 登陆</title>
+    <link rel="icon" href="../icon/favicon_64x64.ico" type="image/x-icon">
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <!--theme-style-->
+    <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/style.css">
+    <!--//theme-style-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script type="application/x-javascript">
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!--fonts-->
+    <link href='../css/googlefont.css' rel='stylesheet' type='text/css'>
+    <!--//fonts-->
+</head>
+
+<body>
+    <!--header-->
+    <div class="header">
+        <div class="header-top">
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="logo">
+                    <a href="http://www.bestfik.com/"><img src="../images/logo_font.png" width="200" height="50" alt=" " /></a>
+                </div>
+                <div class="top-nav">
+                    <span class="menu"> </span>
+                    <ul>
+                        <li><a href="../" class="scroll">首页</a></li>
+                        <li><a href="#" class="scroll">海外仓</a></li>
+                        <li><a href="#" class="scroll">全球直发</a></li>
+                        <li><a href="#" class="scroll">资讯中心</a></li>
+                        <li><a href="#" class="scroll">联系我们</a></li>
+                        <li><a href="../login" class="scroll">注册/登陆</a></li>
+                    </ul>
+                    <!--script-->
+                    <script>
+                        $("span.menu").click(function () {
+							$(".top-nav ul").slideToggle(500, function () {});
+						});
+					</script>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="login_body l_clear">
+            <div class="login_form l_float">
+                <div class="login_top">
+                    <div class="login_tags b_clear">
+                        <span class="top_tag l_float active" onClick="PwdLogin()">密码登录</span>
+                        <span class="top_tag r_float" onClick="QrcodeLogin()">扫码登录</span>
+                    </div>
+                </div>
+                <div class="login_con">
+                    <form action="" method="POST">
+                        <div>
+                            <label for="user_name">用户名</label>
+                            <input type="text" name="" id="user_name" placeholder="账号/手机号/邮箱">
+                            <img src="imgs/icons/user.svg">
+                            <p class="tips hidden">请检查您的账号</p>
+                        </div>
+                        <div>
+                            <label for="user_pwd">密码</label>
+                            <input type="password" name="" id="user_pwd" placeholder="请输入账户密码">
+                            <img src="imgs/icons/lock.svg">                            
+                            <p class="tips hidden">请检查您的密码</p>
+                        </div>
+                        <div class="b_clear submit">
+                            <button type="submit">登&nbsp;&nbsp;录</button>                            
+                            <a href="../reg" class="r_float">还未注册？立即注册</a>
+                            <p class="tips hidden">登录失败，请检查您的账户与密码</p>
+                        </div>
+                    </form>
+                </div>
+                <div class="login_con hidden">
+                    <div class="qr_code">
+                        <img src="imgs/qr.png" alt="">
+                        <p>请使用微信扫码登录<br>仅支持已绑定微信的账户进行快速登录</p>
+                    </div>
+
+                </div>
+                <div class="login_otherAccount">
+                    <span>第三方登录</span>
+                    <a href="#"><img src="imgs/icons/wechat.svg" alt="微信登录"  onClick="QrcodeLogin()"></a>
+                </div>
+
+            </div>
+            <div class="login_ad l_float" id="AdImg">
+                <a href="">查看详情</a>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+	<div class="footer">
+        <div class="container">
+            <div class="footer-class">
+                <div class="class-footer">
+                    <ul>
+                        <li><a href="../" class="scroll">首页</a></li>
+                        <li><a href="#" class="scroll">海外仓</a></li>
+                        <li><a href="#" class="scroll">全球直发</a></li>
+                        <li><a href="#" class="scroll">资讯中心</a></li>
+                        <li><a href="#" class="scroll">联系我们</a></li>
+                        <li><a href="../login" class="scroll">注册/登陆</a></li>
+                    </ul>
+                    <p class="footer-grid">Copyright &copy; 2018.百飞科海外仓科技（深圳）有限公司 All rights reserved.</p>
+                    <img src="../images/ghs.png">
+                    <a class="footer-grid" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo" rel="noopener noreferrer"
+                        data-spm-anchor-id="a21bo.2017.1997523009.41">
+                        <span class="footer-grid">&nbsp;粤ICP备18130951号</span>
+                    </a>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
