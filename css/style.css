@@ -240,8 +240,9 @@ body a{
   float: left;
 }
 .rslides img {
-  height: auto;
+  height: 600px;
   border: 0;
+  vertical-align:middle;
 }
 .callbacks_tabs{
 	list-style: none;
