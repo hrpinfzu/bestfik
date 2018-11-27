@@ -78,8 +78,7 @@ nav>.nav_link>ul>li:last-child{
 
 .container>.login_body{
     width: 1000px;
-    margin: 0 auto;
-    margin-top: 30px;
+    margin: 30px;
 }
 .container>.login_body>.login_form{
     width: 300px;
